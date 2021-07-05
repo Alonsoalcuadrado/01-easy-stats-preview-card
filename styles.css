@@ -1,0 +1,117 @@
+:root {
+  --main-font: 'Inter', sans-serif;
+  --secondary-font: 'Lexend Deca', sans-serif;
+  --dark-blue: #1b1937;
+  --very-dark-blue: #0a0c1c;
+  --soft-violet: #ab5cdb;
+  --white-color: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+section.stats-card {
+  margin: 0;
+  padding: 88px 24px;
+  background-color: var(--very-dark-blue);
+}
+
+div.stats-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+figure.stats-card-image {
+  width: 100%;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+}
+
+figure.stats-card-image img {
+  width: 100%;
+  height: 100%;
+}
+
+section.stats-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px 32px 32px;
+  background-color: var(--dark-blue);
+}
+
+section.stats-card-content article.stats-main-text {
+  width: 100%;
+  font-family: var(--main-font);
+  color: var(--white-color);
+}
+section.stats-card-content article.stats-main-text h1.stats-main-text__headline {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 2.8rem;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+article.stats-main-text h1.stats-main-text__headline span {
+  color: var(--soft-violet);
+}
+
+section.stats-card-content article.stats-main-text p.stats-main-text__text {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+section.stats-card-content article.stats-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: var(--main-font);
+  color: var(--white-color);
+}
+
+section.stats-card-content article.stats-text div.stats-text-container {
+  width: 100%;
+}
+
+article.stats-text div.stats-text-container h5.stats-text__number {
+  width: 100%;
+  margin: 0;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+article.stats-text div.stats-text-container p.stats-text__text {
+  width: 100%;
+  margin: 0px;
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+section.stats-card-content article.stats-text div.stats-text-container:nth-child(2) {
+  margin: 24px 0;
+}
